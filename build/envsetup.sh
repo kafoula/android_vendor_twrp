@@ -17,7 +17,7 @@ function breakfast()
     local variant=$2
     CUSTOM_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
-    COMMON_LUNCH_CHOICES -eng
+    COMMON_LUNCH_CHOICES 
     for f in `/bin/ls device/*/*/vendorsetup.sh 2> /dev/null`
         do
             echo "including $f"
